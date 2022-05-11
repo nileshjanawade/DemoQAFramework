@@ -1,0 +1,11 @@
+23:40:58.644 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+23:40:58.746 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x6aff3108c0185267
+23:40:58.795 [main] INFO  E2EDemoQA.HomePage - Driver initialized
+23:41:03.496 [main] INFO  E2EDemoQA.HomePage - hit the URL
+23:41:03.629 [main] INFO  E2EDemoQA.HomePage - Window Maximized
+23:41:14.291 [main] INFO  E2EDemoQA.HomePage - opened the Alerts frame and Window page
+23:41:14.363 [main] INFO  E2EDemoQA.HomePage - Cliked on Alert Tab
+23:41:14.437 [main] INFO  E2EDemoQA.HomePage - Validated Alert Popup accepted
+23:41:14.581 [main] INFO  E2EDemoQA.HomePage - Validated Timer Alert Popup accepted
+23:41:21.394 [main] INFO  E2EDemoQA.HomePage - opened the Alerts frame and Window page
+23:41:22.020 [AsyncHttpClient-1-10] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26

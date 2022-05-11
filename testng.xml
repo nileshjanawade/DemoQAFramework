@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" >
+    <listeners>
+        <listener class-name="E2EDemoQA.ListenersImpl"></listener>
+    </listeners>
+    <test name="valdaing Home page">
+        <classes>
+            <class name="E2EDemoQA.HomePage"/>
+        </classes>
+    </test>
+    <test name="Validating Alert popups">
+        <classes>
+            <class name="E2EDemoQA.AlertsFrameAndWindow"/>
+        </classes>
+    </test>
+    <test name="Validating Browser">
+        <classes>
+            <class name="E2EDemoQA.BrosersWindow"/>
+        </classes>
+    </test>
+    <test name="Validating Frames">
+        <classes>
+            <class name="E2EDemoQA.FrameWindow"/>
+        </classes>
+    </test>
+</suite>
