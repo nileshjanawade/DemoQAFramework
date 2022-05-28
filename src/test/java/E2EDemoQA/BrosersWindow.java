@@ -38,7 +38,6 @@ public class BrosersWindow extends BasePage {
         bp.getNewTabWindow().click();
         bp.swicthToWindow();
         bp.getTestFromChildWindow();
-        Assert.assertFalse(true);
     }
 
 
