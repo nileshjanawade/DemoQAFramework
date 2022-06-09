@@ -2,6 +2,7 @@ package resources;
 
 
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -24,18 +25,8 @@ public class BasePage {
 
         prop = new Properties();
         FileInputStream fis = new FileInputStream("D:\\Project_DemoQA\\src\\main\\java\\resources\\data.properties");
-
         prop.load(fis);
-        String browsername = prop.getProperty("browser");
-
-        if (browsername.equals("chrome")){
-            System.setProperty("webdriver.chrome.driver", "D:\\InteiJ\\chromedriver_win32\\chromedriver.exe");
-            driver = new ChromeDriver();
-        }
-        else if (browsername.equals("firefox")){
-            System.setProperty("webdriver.gecko.driver", "D:\\InteiJ\\chromedriver_win32\\firefox.exe");
-             driver = new FirefoxDriver();
-        }
+        WebDriver driver =WebDriverManager.chromedriver().create();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         return driver;
     }
